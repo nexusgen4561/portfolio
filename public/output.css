@@ -561,8 +561,107 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-5\/6{
+  width: 83.333333%;
+}
+
 .resize{
   resize: both;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-16{
+  gap: 4rem;
+}
+
+.bg-beige{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 224 209 / var(--tw-bg-opacity));
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.font-inter{
+  font-family: Inter, sans-serif;
+}
+
+.font-opensans{
+  font-family: Open Sans, sans-serif;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-beige{
+  --tw-text-opacity: 1;
+  color: rgb(236 224 209 / var(--tw-text-opacity));
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 html,
@@ -570,7 +669,12 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #dbc1ac;
+  background-color: #634832;
   --tw-text-opacity: 1;
-  color: rgb(99 72 50 / var(--tw-text-opacity));
+  color: rgb(236 224 209 / var(--tw-text-opacity));
+}
+
+.hover\:text-beige:hover{
+  --tw-text-opacity: 1;
+  color: rgb(236 224 209 / var(--tw-text-opacity));
 }
