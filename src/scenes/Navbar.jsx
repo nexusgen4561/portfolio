@@ -6,8 +6,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-beige" : ""}
-      hover:text-beige transition duration-500`}
+      className={`${
+        selectedPage === lowerCasePage ? "text-yellow-brown font-semibold" : ""
+      }
+      hover:text-yellow-brown transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}>
       {page}
@@ -22,7 +24,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   return (
     <nav className="[`z-40 w-full fixed top-0 py-6`]">
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-inter text-3xl font-bold py-4 ">JQ</h4>
+        <h4 className="font-inter text-3xl font-bold py-4 text-beige">JQ</h4>
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
@@ -32,9 +34,73 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+            <Link
+              page="Skills"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Projects"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Education"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Contact"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
           </div>
         ) : (
-          <div></div>
+          <button
+            className="rounded-full bg-mobile-brown p-2"
+            onClick={() => setIsMenuToggled(!isMenuToggled)}>
+            <img src="../assets/menu-icon.svg" alt="menu-icon" />
+          </button>
+        )}
+
+        {/* MOBILE MENU POPUP */}
+        {!isAboveSmallScreens && isMenuToggled && (
+          <div className="fixed right-0 bottom-0 h-full bg-mobile-brown w-[300px]">
+            {/* CLOSE ICON */}
+            <div className="flex justify-end p-12">
+              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                <img src="../assets/close-icon.svg" alt="menu-icon" />
+              </button>
+            </div>
+            {/* MENU ITEMS */}
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-beige">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Education"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+            </div>
+          </div>
         )}
       </div>
     </nav>

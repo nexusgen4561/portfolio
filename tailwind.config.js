@@ -9,6 +9,8 @@ module.exports = {
         beige: "#ece0d1",
         "dark-brown": "#634832",
         "light-brown": "#dbc1ac",
+        "mobile-brown": "#9b6c57",
+        "yellow-brown": "#fdbf6e",
         grey: "ededed",
         "opaque-black": "rgba(0,0,0,.35)"
       },
