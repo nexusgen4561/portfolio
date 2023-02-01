@@ -7,9 +7,11 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   return (
     <AnchorLink
       className={`${
-        selectedPage === lowerCasePage ? "text-yellow-brown font-semibold" : ""
+        selectedPage === lowerCasePage
+          ? "text-dark-red font-semibold"
+          : "text-black"
       }
-      hover:text-yellow-brown transition duration-500`}
+      hover:text-dark-red transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}>
       {page}
@@ -24,7 +26,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   return (
     <nav className="[`z-40 w-full fixed top-0 py-6`]">
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-inter text-3xl font-bold py-4 text-beige">JQ</h4>
+        <h4 className="font-inter text-3xl font-bold py-4 text-red">JQ</h4>
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
@@ -57,7 +59,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className="rounded-full bg-mobile-brown p-2"
+            className="rounded-full bg-dark-red p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}>
             <img src="../assets/menu-icon.svg" alt="menu-icon" />
           </button>
@@ -65,7 +67,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POPUP */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-mobile-brown w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-beige w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -73,7 +75,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               </button>
             </div>
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-beige">
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-light-red">
               <Link
                 page="Home"
                 selectedPage={selectedPage}

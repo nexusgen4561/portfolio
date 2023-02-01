@@ -644,12 +644,12 @@ video {
 
 .bg-beige{
   --tw-bg-opacity: 1;
-  background-color: rgb(236 224 209 / var(--tw-bg-opacity));
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
 }
 
-.bg-mobile-brown{
+.bg-dark-red{
   --tw-bg-opacity: 1;
-  background-color: rgb(155 108 87 / var(--tw-bg-opacity));
+  background-color: rgb(197 0 0 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -701,24 +701,24 @@ video {
   font-weight: 700;
 }
 
-.text-yellow-brown{
+.text-dark-red{
   --tw-text-opacity: 1;
-  color: rgb(253 191 110 / var(--tw-text-opacity));
+  color: rgb(197 0 0 / var(--tw-text-opacity));
 }
 
-.text-beige{
+.text-black{
   --tw-text-opacity: 1;
-  color: rgb(236 224 209 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-dark-brown{
+.text-red{
   --tw-text-opacity: 1;
-  color: rgb(99 72 50 / var(--tw-text-opacity));
+  color: rgb(231 0 0 / var(--tw-text-opacity));
 }
 
-.text-light-brown{
+.text-light-red{
   --tw-text-opacity: 1;
-  color: rgb(219 193 172 / var(--tw-text-opacity));
+  color: rgb(250 91 97 / var(--tw-text-opacity));
 }
 
 .transition{
@@ -738,12 +738,12 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #3b1f1c;
+  background-color: #fffdef;
   --tw-text-opacity: 1;
-  color: rgb(236 224 209 / var(--tw-text-opacity));
+  color: rgb(241 241 241 / var(--tw-text-opacity));
 }
 
-.hover\:text-yellow-brown:hover{
+.hover\:text-dark-red:hover{
   --tw-text-opacity: 1;
-  color: rgb(253 191 110 / var(--tw-text-opacity));
+  color: rgb(197 0 0 / var(--tw-text-opacity));
 }

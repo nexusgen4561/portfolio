@@ -6,11 +6,12 @@ module.exports = {
     extend: {
       colors: {
         brown: "#967259",
-        beige: "#ece0d1",
-        "dark-brown": "#634832",
-        "light-brown": "#dbc1ac",
-        "mobile-brown": "#9b6c57",
-        "yellow-brown": "#fdbf6e",
+        beige: "#F1F1F1",
+        "dark-olive-green": "#556B2F",
+        "light-red": "#FA5B61",
+        "dark-red": "#C50000",
+        "red": "#E70000",
+        "olive-drab": "#fdbf6e",
         grey: "ededed",
         "opaque-black": "rgba(0,0,0,.35)"
       },
