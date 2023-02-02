@@ -4,6 +4,15 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import DotGroup from "./scenes/DotGroup"
 import Landing from "./scenes/Landing"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faTwitter,
+  faFontAwesome,
+  faLinkedin,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+
+library.add(faTwitter, faFontAwesome, faLinkedin, faFacebook);
 function App() {
 
   const [selectedPage, setSelectedPage] = useState('home');
