@@ -8,13 +8,19 @@ module.exports = {
         brown: "#967259",
         beige: "#F1F1F1",
         bgcolor: "#fffdef",
+        grey: "ededed",
+        html: "#d84a24",
+        css: "#136bad",
+        container: "#625d9d",
+        javascript: "#e3d04c",
+        database: "#a91c22",
+        analytics: "#f39812",
         "dark-olive-green": "#556B2F",
         "light-red": "#FA5B61",
         "dark-red": "#C50000",
         "red": "#E70000",
         "dirty-white": "#F1F1F1",
-        grey: "ededed",
-        "opaque-black": "rgba(0,0,0,.35)",
+        "opaque-black": "rgba(0,0,0,.35)"
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":

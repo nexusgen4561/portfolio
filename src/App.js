@@ -1,18 +1,31 @@
 import Navbar from "./scenes/Navbar";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
-import DotGroup from "./scenes/DotGroup"
-import Landing from "./scenes/Landing"
+import DotGroup from "./scenes/DotGroup";
+import Landing from "./scenes/Landing";
+import LineGradient from "./components/LineGradient";
+import MySkills from "./scenes/MySkills";
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+
 import {
   faTwitter,
   faFontAwesome,
   faLinkedin,
   faFacebook,
+  faJsSquare,
+  faHtml5,
+  faCss3Alt,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faTwitter, faFontAwesome, faLinkedin, faFacebook);
+import { faDatabase, faC, faBoxOpen, faChartPie } from "@fortawesome/free-solid-svg-icons";
+
+
+
+library.add(faTwitter, faFontAwesome, faLinkedin, faFacebook, faJsSquare, faHtml5, faCss3Alt, faPython, faDatabase, faC, faBoxOpen, faChartPie);
+
 function App() {
 
   const [selectedPage, setSelectedPage] = useState('home');
@@ -42,6 +55,10 @@ function App() {
             setSelectedPage={setSelectedPage} />
         )}
         <Landing setSelectedPage={setSelectedPage} />
+      </div>
+      {/* <LineGradient /> */}
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
       </div>
     </div>
   );
